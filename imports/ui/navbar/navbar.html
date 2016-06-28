@@ -1,0 +1,21 @@
+<template name="navbar">
+  <nav class = "blue darken-4">
+    <div class="nav-wrapper">
+      <div class="container">
+        <a href="/" class="brand-logo left">
+          I am the one who knocks
+        </a>
+      </div>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <!-- <li>{{>loginButtons align="right"}}</li> -->
+        {{#if currentUser}}
+          <li><a href="/" id="logout" class="waves-effect waves-light btn cyan">Logout</a></li>
+          <li><a href="/listing" class="waves-effect waves-light btn cyan">Recetas</a></li>
+        {{else}}
+          <li><a href="/register" class="waves-effect waves-light btn cyan">Register</a></li>
+          <li><a href="/login" class="waves-effect waves-light btn cyan">Login</a></li>
+        {{/if}}
+      </ul>
+    </div>
+  </nav>
+</template>
