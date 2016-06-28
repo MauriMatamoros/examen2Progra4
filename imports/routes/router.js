@@ -1,5 +1,6 @@
 import { Router } from "meteor/iron:router"
 import { Recetas } from '../api/receta.js';
+import { Ingredientes } from '../api/ingredientes.js';
 import "../ui/layout/layout.js"
 import "../ui/navbar/navbar.js"
 import "../ui/listRecetas/listRecetas.js"
